@@ -57,7 +57,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 className="text-primary hover:underline transition-colors duration-200"
               >
-                self-published a coffee table book
+                published a coffee table book
               </a>{" "}
               about it.
             </p>
