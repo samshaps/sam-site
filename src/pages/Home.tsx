@@ -92,13 +92,16 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Profile Image - Right side */}
+        {/* Hero Visual with Blob - Right side */}
         <div className="flex-shrink-0 relative order-1 lg:order-2">
-          <img
-            src={samHeadshot}
-            alt="Sam's profile photo"
-            className="max-w-80 lg:max-w-96 object-contain"
-          />
+          <div className="hero-visual">
+            <div className="hero-blob" aria-hidden="true"></div>
+            <img 
+              className="portrait" 
+              src={samHeadshot} 
+              alt="Sam Shapiro headshot"
+            />
+          </div>
         </div>
       </div>
     </Layout>
