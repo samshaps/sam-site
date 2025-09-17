@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import samProfile from "@/assets/sam-profile.jpg";
+import samHeadshot from "@/assets/sam-headshot.jpg";
 
 const Home = () => {
   return (
@@ -8,13 +8,8 @@ const Home = () => {
         {/* Content - Left side */}
         <div className="max-w-2xl text-left flex-1 order-2 lg:order-1">
           <div className="mb-8">
-            <div className="text-lg text-muted-foreground mb-4">
-              Hello, I'm Sam,
-              <br />
-              a UI/UX
-            </div>
-            <h1 className="heading-xl mb-6">
-              <span className="text-accent">Designer.</span>
+            <h1 className="heading-xl mb-6 text-primary">
+              Hi, I'm Sam.
             </h1>
           </div>
           
@@ -69,7 +64,7 @@ const Home = () => {
             <div className="dots-pattern absolute -top-4 -right-4 w-24 h-24"></div>
             
             <img
-              src={samProfile}
+              src={samHeadshot}
               alt="Sam's profile photo"
               className="w-80 h-80 lg:w-96 lg:h-96 object-cover profile-modern"
             />
