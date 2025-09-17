@@ -7,7 +7,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="min-h-screen relative synthwave-grid">
+    <div className="min-h-screen relative">
       <Navigation />
       <main className="container mx-auto px-6 pt-24 pb-16 max-w-4xl relative z-10">
         {children}
@@ -29,12 +29,6 @@ const Layout = ({ children }: LayoutProps) => {
           </svg>
         </a>
       </footer>
-      
-      {/* Geometric decorations */}
-      <div className="triangle-decoration top-32 left-12 gaming-element" />
-      <div className="circle-decoration top-48 right-24 gaming-element" />
-      <div className="triangle-decoration bottom-32 right-16 gaming-element" style={{transform: 'rotate(180deg)'}} />
-      <div className="circle-decoration bottom-48 left-32 gaming-element" />
     </div>
   );
 };

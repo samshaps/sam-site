@@ -7,55 +7,55 @@
 
 @layer base {
   :root {
-    /* Synthwave Color Palette */
+    /* Enhanced Synthwave Color Palette for better contrast */
     --background: 240 15% 8%;
-    --foreground: 300 20% 95%;
+    --foreground: 0 0% 100%;
 
     --card: 240 20% 12%;
-    --card-foreground: 300 20% 95%;
+    --card-foreground: 0 0% 100%;
 
     --popover: 240 20% 12%;
-    --popover-foreground: 300 20% 95%;
+    --popover-foreground: 0 0% 100%;
 
-    /* Neon Cyan Primary */
-    --primary: 180 100% 50%;
+    /* Brighter Neon Cyan Primary for contrast */
+    --primary: 180 100% 60%;
     --primary-foreground: 240 15% 8%;
 
-    /* Hot Magenta Secondary */
-    --secondary: 320 100% 60%;
+    /* Brighter Hot Magenta Secondary */
+    --secondary: 320 100% 70%;
     --secondary-foreground: 240 15% 8%;
 
-    /* Electric Purple Accent */
-    --accent: 280 100% 70%;
+    /* Brighter Electric Purple Accent */
+    --accent: 280 100% 80%;
     --accent-foreground: 240 15% 8%;
 
-    /* Synthwave Pink */
-    --synthwave-pink: 330 100% 70%;
+    /* Enhanced Synthwave Pink */
+    --synthwave-pink: 330 100% 80%;
     --synthwave-pink-foreground: 240 15% 8%;
 
     --muted: 240 10% 25%;
-    --muted-foreground: 300 15% 70%;
+    --muted-foreground: 0 0% 85%;
 
     --destructive: 0 100% 60%;
-    --destructive-foreground: 300 20% 95%;
+    --destructive-foreground: 0 0% 100%;
 
     --border: 280 50% 30%;
     --input: 240 20% 15%;
-    --ring: 180 100% 50%;
+    --ring: 180 100% 60%;
 
     --radius: 0.5rem;
 
-    /* Synthwave Glow Colors */
-    --glow-cyan: 180 100% 50%;
-    --glow-magenta: 320 100% 60%;
-    --glow-purple: 280 100% 70%;
-    --glow-pink: 330 100% 70%;
+    /* Enhanced Synthwave Glow Colors */
+    --glow-cyan: 180 100% 60%;
+    --glow-magenta: 320 100% 70%;
+    --glow-purple: 280 100% 80%;
+    --glow-pink: 330 100% 80%;
 
     /* Synthwave Gradients */
     --gradient-synthwave: linear-gradient(135deg, 
-      hsl(280 100% 70%), 
-      hsl(320 100% 60%), 
-      hsl(180 100% 50%));
+      hsl(280 100% 80%), 
+      hsl(320 100% 70%), 
+      hsl(180 100% 60%));
     --gradient-sunset: linear-gradient(180deg, 
       hsl(280 100% 20%), 
       hsl(320 100% 25%), 
@@ -64,11 +64,17 @@
       hsl(280 100% 15%), 
       hsl(240 15% 8%));
     --gradient-card: linear-gradient(145deg, 
-      hsl(240 20% 12%), 
-      hsl(280 30% 15%));
+      rgba(30, 20, 60, 0.9), 
+      rgba(60, 30, 90, 0.8));
     --gradient-text-3d: linear-gradient(145deg, 
-      hsl(180 100% 50%), 
-      hsl(320 100% 60%));
+      hsl(180 100% 60%), 
+      hsl(320 100% 70%));
+    
+    /* Text shadow for better readability */
+    --text-shadow-strong: 2px 2px 4px rgba(0, 0, 0, 0.9), 
+                         0 0 8px rgba(180, 255, 255, 0.3);
+    --text-shadow-medium: 1px 1px 2px rgba(0, 0, 0, 0.8), 
+                         0 0 4px rgba(180, 255, 255, 0.2);
   }
 }
 
@@ -79,10 +85,13 @@
 
   body {
     @apply bg-background text-foreground;
-    background: var(--gradient-bg);
+    background-image: url('/src/assets/synthwave-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     min-height: 100vh;
     font-family: 'Rajdhani', sans-serif;
-    background-attachment: fixed;
   }
 
   /* Smooth scrolling */
@@ -172,7 +181,7 @@
     transform: translateY(-2px);
   }
 
-  /* 3D Synthwave text effects */
+  /* 3D Synthwave text effects with better readability */
   .text-synthwave-3d {
     background: var(--gradient-text-3d);
     background-clip: text;
@@ -181,10 +190,12 @@
     text-shadow: 
       2px 2px 0px hsl(var(--glow-cyan) / 0.8),
       4px 4px 0px hsl(var(--glow-magenta) / 0.6),
-      6px 6px 0px hsl(var(--glow-purple) / 0.4);
+      6px 6px 0px hsl(var(--glow-purple) / 0.4),
+      0 0 20px rgba(180, 255, 255, 0.5);
     font-family: 'Orbitron', monospace;
     font-weight: 900;
     letter-spacing: 0.1em;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
   }
 
   .text-neon-cyan {
@@ -192,7 +203,9 @@
     text-shadow: 
       0 0 5px hsl(var(--glow-cyan) / 0.8),
       0 0 15px hsl(var(--glow-cyan) / 0.6),
-      0 0 25px hsl(var(--glow-cyan) / 0.4);
+      0 0 25px hsl(var(--glow-cyan) / 0.4),
+      2px 2px 4px rgba(0, 0, 0, 0.9);
+    font-weight: 600;
   }
 
   .text-neon-magenta {
@@ -200,7 +213,9 @@
     text-shadow: 
       0 0 5px hsl(var(--glow-magenta) / 0.8),
       0 0 15px hsl(var(--glow-magenta) / 0.6),
-      0 0 25px hsl(var(--glow-magenta) / 0.4);
+      0 0 25px hsl(var(--glow-magenta) / 0.4),
+      2px 2px 4px rgba(0, 0, 0, 0.9);
+    font-weight: 600;
   }
 
   .text-neon-purple {
@@ -208,15 +223,31 @@
     text-shadow: 
       0 0 5px hsl(var(--glow-purple) / 0.8),
       0 0 15px hsl(var(--glow-purple) / 0.6),
-      0 0 25px hsl(var(--glow-purple) / 0.4);
+      0 0 25px hsl(var(--glow-purple) / 0.4),
+      2px 2px 4px rgba(0, 0, 0, 0.9);
+    font-weight: 600;
   }
 
-  /* Synthwave border effects */
+  /* Enhanced readability for body text */
+  .text-readable {
+    color: hsl(var(--foreground));
+    text-shadow: var(--text-shadow-medium);
+    font-weight: 500;
+  }
+
+  .text-readable-light {
+    color: hsl(var(--muted-foreground));
+    text-shadow: var(--text-shadow-medium);
+    font-weight: 400;
+  }
+
+  /* Synthwave border effects with better backdrop */
   .synthwave-border {
     position: relative;
-    border: 1px solid hsl(var(--primary) / 0.3);
-    background: var(--gradient-card);
-    backdrop-filter: blur(10px);
+    border: 1px solid hsl(var(--primary) / 0.4);
+    background: rgba(30, 20, 60, 0.85);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
   }
 
   .synthwave-border::before {

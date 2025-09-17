@@ -23,7 +23,7 @@ const Contact = () => {
               <h2 className="text-2xl font-orbitron font-bold mb-4 text-neon-magenta">
                 Let's Connect
               </h2>
-              <p className="text-foreground mb-6">
+              <p className="text-readable mb-6">
                 Feel free to reach out via email for any questions, collaborations, or just to chat.
               </p>
               
@@ -39,7 +39,7 @@ const Contact = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-muted-foreground">
+          <p className="text-readable-light">
             You can also find me on{" "}
             <a
               href="https://linkedin.com/in/samshap"

@@ -27,7 +27,7 @@ const About = () => {
         <div className="grid gap-8">
           <section className="synthwave-border rounded-lg p-8 scanlines">
             <h2 className="text-2xl font-orbitron font-bold mb-4 text-neon-cyan">Professional Background</h2>
-            <div className="space-y-4 text-foreground leading-relaxed">
+            <div className="space-y-4 text-readable leading-relaxed">
               <p>
                 I love building products that reduce friction in peoples' lives. Currently, I'm on the product team at Vimeo, where I'm helping developers build with Vimeo's powerful video infrastructure and APIs.
               </p>
@@ -39,7 +39,7 @@ const About = () => {
 
           <section className="synthwave-border rounded-lg p-8 scanlines">
             <h2 className="text-2xl font-orbitron font-bold mb-4 text-neon-magenta">Personal Journey</h2>
-            <div className="space-y-4 text-foreground leading-relaxed">
+            <div className="space-y-4 text-readable leading-relaxed">
               <p>
                 From August 2019 to February 2020, I took six months off from work to fulfill a lifelong dream of extended solo travel. This experience was transformative, allowing me to explore different cultures, challenge my comfort zone, and gain new perspectives on life and work.
               </p>
@@ -51,7 +51,7 @@ const About = () => {
 
           <section className="synthwave-border rounded-lg p-8 scanlines">
             <h2 className="text-2xl font-orbitron font-bold mb-4 text-neon-purple">Life in New York</h2>
-            <div className="space-y-4 text-foreground leading-relaxed">
+            <div className="space-y-4 text-readable leading-relaxed">
               <p>
                 I'm based in New York, where I enjoy the perfect balance of urban energy and access to nature. The city provides endless opportunities for cultural experiences, while still being close enough to mountains for skiing and lakes for fishing.
               </p>
@@ -63,7 +63,7 @@ const About = () => {
 
           <section className="synthwave-border rounded-lg p-8 scanlines">
             <h2 className="text-2xl font-orbitron font-bold mb-4 text-neon-cyan">Philosophy & Approach</h2>
-            <div className="space-y-4 text-foreground leading-relaxed">
+            <div className="space-y-4 text-readable leading-relaxed">
               <p>
                 I believe in building products with empathy and attention to detail. Every friction point removed, every interaction made smoother, every workflow optimized – these small improvements compound to create meaningful impact in people's lives.
               </p>

@@ -4,21 +4,13 @@ import samProfile from "@/assets/sam-profile.jpg";
 const Home = () => {
   return (
     <Layout>
-      <div className="flex flex-col lg:flex-row items-center justify-center min-h-[60vh] gap-12">
-        <div className="flex-shrink-0 relative">
-          <img
-            src={samProfile}
-            alt="Sam's profile photo"
-            className="w-64 h-64 object-cover profile-synthwave"
-          />
-        </div>
-        
-        <div className="max-w-2xl text-center lg:text-left">
+      <div className="flex flex-col lg:flex-row items-center justify-between min-h-[60vh] gap-12">
+        <div className="max-w-2xl text-left flex-1 order-2 lg:order-1">
           <h1 className="text-4xl lg:text-5xl font-orbitron mb-8 text-synthwave-3d">
             Hi, my name is Sam.
           </h1>
           
-          <div className="space-y-6 text-lg leading-relaxed text-foreground">
+          <div className="space-y-6 text-lg leading-relaxed text-readable">
             <p>
               I love building products that reduce friction in peoples' lives.
             </p>
@@ -71,6 +63,14 @@ const Home = () => {
               </a>.
             </p>
           </div>
+        </div>
+
+        <div className="flex-shrink-0 relative order-1 lg:order-2">
+          <img
+            src={samProfile}
+            alt="Sam's profile photo"
+            className="w-64 h-64 object-cover profile-synthwave"
+          />
         </div>
       </div>
     </Layout>

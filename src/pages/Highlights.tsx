@@ -101,7 +101,7 @@ const Highlights = () => {
                 )}
               </div>
               
-              <p className="text-foreground leading-relaxed">
+              <p className="text-readable leading-relaxed">
                 {highlight.description}
               </p>
               
