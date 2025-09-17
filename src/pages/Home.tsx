@@ -8,17 +8,17 @@ const Home = () => {
         {/* Content - Left side */}
         <div className="max-w-2xl text-left flex-1 order-2 lg:order-1">
           <div className="mb-8">
-            <h1 className="heading-xl mb-6 text-primary">
+            <h1 className="h1 mb-6">
               Hi, I'm Sam.
             </h1>
           </div>
           
-          <div className="space-y-6 text-lg leading-relaxed text-muted-foreground mb-8 readable">
-            <p>
+          <div className="space-y-6 mb-8 readable">
+            <p className="p">
               I love building useful tools for people.
             </p>
             
-            <p>
+            <p className="p">
               I currently lead Ecosystem @ Vimeo. Our team empowers developers to infuse the power of video into their products and launch{" "}
               <a 
                 href="https://vimeo.com/integrations" 
@@ -41,7 +41,7 @@ const Home = () => {
                and owned our suite of live products.
             </p>
             
-            <p>
+            <p className="p">
               From Aug-19 to Feb-20, I took six months off of working to fulfill a lifelong dream of extended solo travel. You can read dispatches from my trip{" "}
               <a 
                 href="https://medium.com/shappy-travels" 
@@ -62,7 +62,7 @@ const Home = () => {
               about it.
             </p>
 
-            <p>
+            <p className="p">
               Before that, I helped scale{" "}
               <a 
                 href="https://www.peekpro.com/" 
@@ -75,7 +75,7 @@ const Home = () => {
               and was a management consultant at PwC.
             </p>
 
-            <p>
+            <p className="p">
               If you'd like to get in touch, go ahead and book some time!
             </p>
           </div>

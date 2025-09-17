@@ -44,6 +44,7 @@
     /* Typography */
     --measure: 72ch;            /* max characters per line */
     --body-lh: 1.65;            /* line height */
+    --text: 210 40% 15%;        /* using existing foreground color */
 
     /* Modern Gradients */
     --gradient-primary: linear-gradient(135deg, 
@@ -66,9 +67,51 @@
     min-height: 100vh;
   }
 
+  /* Responsive base font sizing */
+  html { 
+    font-size: 16px; 
+    color: hsl(var(--text)); 
+  }
+  
+  @media (min-width: 640px) { 
+    html { font-size: 17px; } 
+  }
+  
+  @media (min-width: 1024px) { 
+    html { font-size: 18px; } 
+  }
+
   /* Smooth scrolling */
   html {
     scroll-behavior: smooth;
+  }
+
+  /* Typography system */
+  .h1 {
+    font-size: clamp(2.25rem, 4vw + 1rem, 4rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    @apply text-primary;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .h2 {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+    font-weight: 700;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .p { 
+    font-size: 1.05rem; 
+    line-height: 1.65;
+    @apply text-muted-foreground;
+  }
+
+  .mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    font-size: .9rem;
+    letter-spacing: .01em;
+    @apply text-muted-foreground;
   }
 
   /* Typography - readable line length */
