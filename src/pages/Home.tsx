@@ -19,14 +19,14 @@ const Home = () => {
             </p>
             
             <p>
-              I currently lead Ecosystem @ Vimeo. Our team empowers developers to infuse video into their products and launch{" "}
+              I currently lead Ecosystem @ Vimeo. Our team empowers developers to infuse the power of video into their products and launch{" "}
               <a 
                 href="https://vimeo.com/integrations" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-primary hover:underline transition-colors duration-200"
               >
-                integrations
+                value-adding integrations
               </a>{" "}
               with Vimeo. I've also worked on tools to{" "}
               <a 
@@ -57,7 +57,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 className="text-primary hover:underline transition-colors duration-200"
               >
-                published a coffee table book
+                self-published a coffee table book
               </a>{" "}
               about it.
             </p>
@@ -80,18 +80,14 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex justify-start">
             <a 
-              href="mailto:hi@samshap.com"
+              href="https://calendly.com/hisamshap/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="modern-button text-center"
             >
-              HIRE ME
-            </a>
-            <a 
-              href="/highlights"
-              className="modern-button-outline text-center"
-            >
-              VIEW WORK
+              LET'S CHAT
             </a>
           </div>
         </div>
