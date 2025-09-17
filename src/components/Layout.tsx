@@ -7,20 +7,13 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="min-h-screen relative bg-background">
-      {/* Logo */}
-      <div className="fixed top-6 left-6 z-50">
-        <div className="logo-container">
-          S.S
-        </div>
-      </div>
-      
-      <main className="container mx-auto px-6 pt-24 pb-16 max-w-6xl relative z-10">
+      <main className="container mx-auto px-6 pt-16 pb-16 max-w-6xl relative z-10">
         {children}
       </main>
       
       <footer className="fixed bottom-6 left-6 z-50">
         <a
-          href="https://linkedin.com/in/samshap"
+          href="https://www.linkedin.com/in/samuel-shapiro-42305137/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center w-12 h-12 bg-muted hover:bg-accent border border-border rounded-full transition-all duration-200 hover:scale-105"
