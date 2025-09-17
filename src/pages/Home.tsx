@@ -4,7 +4,7 @@ import samHeadshot from "@/assets/sam-headshot.jpg";
 const Home = () => {
   return (
     <Layout>
-      <div className="flex flex-col lg:flex-row items-center justify-between min-h-[70vh] gap-16">
+      <div className="flex flex-col lg:flex-row items-center justify-between min-h-[60vh] gap-12">
         {/* Content - Left side */}
         <div className="max-w-2xl text-left flex-1 order-2 lg:order-1">
           <div className="mb-8">

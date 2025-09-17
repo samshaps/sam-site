@@ -67,18 +67,18 @@
     min-height: 100vh;
   }
 
-  /* Responsive base font sizing */
+  /* Responsive base font sizing - more conservative */
   html { 
     font-size: 16px; 
     color: hsl(var(--text)); 
   }
   
   @media (min-width: 640px) { 
-    html { font-size: 17px; } 
+    html { font-size: 16px; } 
   }
   
   @media (min-width: 1024px) { 
-    html { font-size: 18px; } 
+    html { font-size: 17px; } 
   }
 
   /* Smooth scrolling */
@@ -86,9 +86,9 @@
     scroll-behavior: smooth;
   }
 
-  /* Typography system */
+  /* Typography system - better scaling for desktop */
   .h1 {
-    font-size: clamp(2.25rem, 4vw + 1rem, 4rem);
+    font-size: clamp(2rem, 3vw + 1rem, 3rem);
     font-weight: 800;
     letter-spacing: -0.02em;
     @apply text-primary;
