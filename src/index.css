@@ -215,7 +215,7 @@
     margin-top: 2.5rem; /* Align with first paragraph */
   }
 
-  /* Consolidated portrait styling with symmetrical rounded edges and fade */
+  /* Portrait styling with border fade effect */
   .portrait {
     position: relative;
     z-index: 1;
@@ -224,14 +224,21 @@
     max-height: 58vh;
     height: auto;
     filter: drop-shadow(0 18px 28px rgba(0,0,0,.18));
-    
     border-radius: 20px;
-    -webkit-mask-image: radial-gradient(130% 120% at var(--focus-x) var(--focus-y),
-                        #000 0 82%,
-                        transparent 100%);
-    mask-image: radial-gradient(130% 120% at var(--focus-x) var(--focus-y),
-                        #000 0 82%,
-                        transparent 100%);
+  }
+
+  .portrait::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    background: radial-gradient(ellipse 85% 85% at center, 
+                               transparent 60%, 
+                               hsl(var(--background)) 100%);
+    pointer-events: none;
   }
 
   /* soft blobs using design system colors */
