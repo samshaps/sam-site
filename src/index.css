@@ -215,7 +215,7 @@
     margin-top: 2.5rem; /* Align with first paragraph */
   }
 
-  /* Portrait styling with border fade effect */
+  /* Portrait styling */
   .portrait {
     position: relative;
     z-index: 1;
@@ -227,18 +227,19 @@
     border-radius: 20px;
   }
 
-  .portrait::after {
+  /* Fade entire hero visual section into background */
+  .hero-visual::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 20px;
-    background: radial-gradient(ellipse 85% 85% at center, 
-                               transparent 60%, 
+    background: radial-gradient(ellipse 120% 120% at center, 
+                               transparent 45%, 
                                hsl(var(--background)) 100%);
     pointer-events: none;
+    z-index: 2;
   }
 
   /* soft blobs using design system colors */
