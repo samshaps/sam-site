@@ -201,6 +201,26 @@
     @apply bg-white/80 backdrop-blur-sm border border-border rounded-full shadow-sm;
   }
 
+  /* Hero container - constrained width */
+  .hero-container {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: clamp(16px, 3vw, 32px);
+  }
+
+  /* Hero grid - two columns with clamped gap */
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 68ch) minmax(360px, 520px);
+    column-gap: clamp(32px, 5vw, 72px);
+    align-items: start;
+  }
+
+  /* Tighter spacing at ultra-wide */
+  @media (min-width: 1440px) {
+    .hero-container { max-width: 1160px; }
+  }
+
   /* Hero visual with blob effect */
   .hero-visual { 
     position: relative;
@@ -216,12 +236,14 @@
     height: auto;
     filter: drop-shadow(0 18px 28px rgba(0,0,0,.18));
     border-radius: 12px;
+    align-self: start;
+    transform: translateY(2px); /* Small optical alignment */
   }
 
-  /* soft blobs using design system colors */
+  /* soft blobs using design system colors - positioned to bridge columns */
   .hero-blob {
     position: absolute;
-    right: -4%;
+    right: -16px; /* Shifted toward text to bridge columns */
     top: -4%;
     width: min(36vw, 500px);
     height: min(36vw, 500px);

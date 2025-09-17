@@ -4,9 +4,10 @@ import samHeadshot from "@/assets/sam-headshot.jpg";
 const Home = () => {
   return (
     <Layout>
-      <div className="flex flex-col lg:flex-row items-center justify-between min-h-[60vh] gap-12">
-        {/* Content - Left side */}
-        <div className="max-w-2xl text-left flex-1 order-2 lg:order-1">
+      <div className="hero-container">
+        <div className="hero">
+          {/* Content - Left side */}
+          <div className="text-left">
           <div className="mb-8">
             <h1 className="h1 mb-6">
               Hi, I'm Sam.
@@ -92,8 +93,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Hero Visual with Blob - Right side */}
-        <div className="flex-shrink-0 relative order-1 lg:order-2">
+          {/* Hero Visual with Blob - Right side */}
           <div className="hero-visual">
             <div className="hero-blob" aria-hidden="true"></div>
             <img 
