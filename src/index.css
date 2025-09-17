@@ -203,14 +203,17 @@
 
   /* Hero visual with blob effect */
   .hero-visual { 
-    position: relative; 
+    position: relative;
+    overflow: hidden; /* prevent blob blur from causing page overflow */
   }
 
   .portrait {
     position: relative;
     z-index: 1;
     display: block;
-    max-width: min(36vw, 520px);
+    max-width: min(30vw, 440px);
+    max-height: 56vh;
+    height: auto;
     filter: drop-shadow(0 18px 28px rgba(0,0,0,.18));
     border-radius: 12px;
   }
@@ -218,12 +221,12 @@
   /* soft blobs using design system colors */
   .hero-blob {
     position: absolute;
-    right: -6%;
-    top: -6%;
-    width: min(42vw, 560px);
-    height: min(42vw, 560px);
+    right: -4%;
+    top: -4%;
+    width: min(36vw, 500px);
+    height: min(36vw, 500px);
     z-index: 0;
-    filter: blur(44px);
+    filter: blur(36px);
     border-radius: 999px;
     background:
       radial-gradient(40% 40% at 30% 30%, hsl(var(--primary) / 0.35) 0%, transparent 60%),
