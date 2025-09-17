@@ -237,9 +237,10 @@
       radial-gradient(50% 50% at 70% 60%, hsl(var(--accent) / 0.35) 0%, transparent 62%);
   }
 
-  /* Enhanced feathering for seamless blending */
+  /* Symmetrical rounded edges with even fade */
   .portrait { 
-    mask-image: radial-gradient(ellipse 105% 102% at 50% 50%, black 88%, transparent 100%); 
+    mask-image: radial-gradient(ellipse 98% 98% at 50% 50%, black 85%, transparent 100%);
+    border-radius: 20px;
   }
 }
 
