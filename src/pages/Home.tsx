@@ -8,7 +8,7 @@ const Home = () => {
         {/* Content - Left side */}
         <div className="max-w-2xl text-left flex-1 order-2 lg:order-1">
           <div className="mb-8">
-            <h1 className="h1 mb-6">
+            <h1 className="h1 mb-6 text-primary">
               Hi, I'm Sam.
             </h1>
           </div>
