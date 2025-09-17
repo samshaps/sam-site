@@ -9,12 +9,12 @@ const Home = () => {
           <img
             src={samProfile}
             alt="Sam's profile photo"
-            className="w-64 h-64 object-cover profile-glow"
+            className="w-64 h-64 object-cover profile-90s"
           />
         </div>
         
         <div className="max-w-2xl text-center lg:text-left">
-          <h1 className="text-4xl lg:text-5xl font-bold mb-8 text-neon-cyan">
+          <h1 className="text-4xl lg:text-5xl font-fredoka mb-8 text-rainbow">
             Hi, my name is Sam.
           </h1>
           
@@ -29,7 +29,7 @@ const Home = () => {
                 href="https://vimeo.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-neon-purple hover:text-accent transition-colors duration-300"
+                className="text-90s-lime hover:text-90s-blue transition-colors duration-300"
               >
                 Vimeo
               </a>, where I'm helping developers build with Vimeo.
@@ -39,7 +39,7 @@ const Home = () => {
               From Aug-19 to Feb-20, I took six months off of working to fulfill a lifelong dream of extended solo travel. You can read dispatches from my trip{" "}
               <a 
                 href="#" 
-                className="text-neon-purple hover:text-accent transition-colors duration-300"
+                className="text-90s-lime hover:text-90s-blue transition-colors duration-300"
               >
                 here
               </a>. I also self-published a coffee table book about it.
@@ -51,7 +51,7 @@ const Home = () => {
                 href="#" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-neon-purple hover:text-accent transition-colors duration-300"
+                className="text-90s-lime hover:text-90s-blue transition-colors duration-300"
               >
                 Peek Pro
               </a>, where I helped tour and activity operators grow sales, save time, and delight their customers.
@@ -65,7 +65,7 @@ const Home = () => {
               If you'd like to get in touch, please{" "}
               <a 
                 href="mailto:hi@samshap.com"
-                className="text-neon-pink hover:text-accent transition-colors duration-300"
+                className="text-90s-pink hover:text-90s-blue transition-colors duration-300"
               >
                 shoot me an email
               </a>.

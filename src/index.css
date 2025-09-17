@@ -1,60 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Fredoka+One&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Retro Arcade Design System - All colors MUST be HSL */
+/* 90s Geocities Design System - All colors MUST be HSL */
 
 @layer base {
   :root {
-    /* Retro Arcade Color Palette */
-    --background: 220 25% 8%;
-    --foreground: 210 40% 98%;
+    /* Geocities Color Palette */
+    --background: 270 100% 95%;
+    --foreground: 270 50% 15%;
 
-    --card: 220 20% 12%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 270 50% 15%;
 
-    --popover: 220 20% 12%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 270 50% 15%;
 
-    /* Neon Cyan Primary */
-    --primary: 180 100% 50%;
-    --primary-foreground: 220 25% 8%;
+    /* Hot Pink Primary */
+    --primary: 320 100% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Electric Purple Secondary */
-    --secondary: 280 100% 70%;
-    --secondary-foreground: 220 25% 8%;
+    /* Lime Green Secondary */
+    --secondary: 80 100% 50%;
+    --secondary-foreground: 270 50% 15%;
 
-    /* Neon Pink Accent */
-    --accent: 320 100% 75%;
-    --accent-foreground: 220 25% 8%;
+    /* Electric Blue Accent */
+    --accent: 200 100% 50%;
+    --accent-foreground: 0 0% 100%;
 
-    /* Electric Green Success */
-    --success: 120 100% 50%;
-    --success-foreground: 220 25% 8%;
+    /* Bright Yellow Success */
+    --success: 60 100% 50%;
+    --success-foreground: 270 50% 15%;
 
-    --muted: 220 15% 20%;
-    --muted-foreground: 210 20% 70%;
+    --muted: 270 20% 85%;
+    --muted-foreground: 270 30% 40%;
 
-    --destructive: 0 100% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 25%;
-    --input: 220 15% 25%;
-    --ring: 180 100% 50%;
+    --border: 270 60% 70%;
+    --input: 0 0% 100%;
+    --ring: 320 100% 50%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Neon Glow Colors */
-    --glow-cyan: 180 100% 50%;
-    --glow-purple: 280 100% 70%;
-    --glow-pink: 320 100% 75%;
-    --glow-green: 120 100% 50%;
+    /* 90s Glow Colors */
+    --glow-pink: 320 100% 50%;
+    --glow-lime: 80 100% 50%;
+    --glow-blue: 200 100% 50%;
+    --glow-yellow: 60 100% 50%;
 
-    /* Gradients */
-    --gradient-neon: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
-    --gradient-bg: linear-gradient(180deg, hsl(220 25% 8%), hsl(220 30% 5%));
-    --gradient-card: linear-gradient(145deg, hsl(220 20% 12%), hsl(220 15% 18%));
+    /* Rainbow Gradients */
+    --gradient-rainbow: linear-gradient(45deg, 
+      hsl(0 100% 50%), 
+      hsl(60 100% 50%), 
+      hsl(120 100% 50%), 
+      hsl(180 100% 50%), 
+      hsl(240 100% 50%), 
+      hsl(300 100% 50%));
+    --gradient-bg: radial-gradient(circle, hsl(270 100% 95%), hsl(270 80% 90%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(270 20% 95%));
+    --gradient-metallic: linear-gradient(145deg, 
+      hsl(60 100% 90%), 
+      hsl(60 100% 70%), 
+      hsl(60 100% 90%));
   }
 }
 
@@ -67,7 +77,8 @@
     @apply bg-background text-foreground;
     background: var(--gradient-bg);
     min-height: 100vh;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Comic Neue', sans-serif;
+    background-attachment: fixed;
   }
 
   /* Smooth scrolling */
@@ -77,93 +88,137 @@
 }
 
 @layer components {
-  /* Neon glow effects */
-  .glow-cyan {
-    box-shadow: 0 0 20px hsl(var(--glow-cyan) / 0.3);
-  }
-  
-  .glow-purple {
-    box-shadow: 0 0 20px hsl(var(--glow-purple) / 0.3);
-  }
-  
+  /* 90s Sparkle effects */
   .glow-pink {
-    box-shadow: 0 0 20px hsl(var(--glow-pink) / 0.3);
+    box-shadow: 0 0 15px hsl(var(--glow-pink) / 0.6), 
+                0 0 30px hsl(var(--glow-pink) / 0.4);
+  }
+  
+  .glow-lime {
+    box-shadow: 0 0 15px hsl(var(--glow-lime) / 0.6), 
+                0 0 30px hsl(var(--glow-lime) / 0.4);
+  }
+  
+  .glow-blue {
+    box-shadow: 0 0 15px hsl(var(--glow-blue) / 0.6), 
+                0 0 30px hsl(var(--glow-blue) / 0.4);
   }
 
-  .glow-green {
-    box-shadow: 0 0 20px hsl(var(--glow-green) / 0.3);
+  .glow-yellow {
+    box-shadow: 0 0 15px hsl(var(--glow-yellow) / 0.6), 
+                0 0 30px hsl(var(--glow-yellow) / 0.4);
   }
 
-  /* Enhanced hover glow */
-  .hover-glow-cyan:hover {
-    box-shadow: 0 0 30px hsl(var(--glow-cyan) / 0.5);
-  }
-
-  .hover-glow-purple:hover {
-    box-shadow: 0 0 30px hsl(var(--glow-purple) / 0.5);
-  }
-
+  /* Enhanced hover effects */
   .hover-glow-pink:hover {
-    box-shadow: 0 0 30px hsl(var(--glow-pink) / 0.5);
+    box-shadow: 0 0 25px hsl(var(--glow-pink) / 0.8), 
+                0 0 50px hsl(var(--glow-pink) / 0.6);
+    transform: scale(1.05);
   }
 
-  /* Neon text effects */
-  .text-neon-cyan {
+  .hover-glow-lime:hover {
+    box-shadow: 0 0 25px hsl(var(--glow-lime) / 0.8), 
+                0 0 50px hsl(var(--glow-lime) / 0.6);
+    transform: scale(1.05);
+  }
+
+  .hover-glow-blue:hover {
+    box-shadow: 0 0 25px hsl(var(--glow-blue) / 0.8), 
+                0 0 50px hsl(var(--glow-blue) / 0.6);
+    transform: scale(1.05);
+  }
+
+  /* 90s text effects */
+  .text-90s-pink {
     color: hsl(var(--primary));
-    text-shadow: 0 0 10px hsl(var(--glow-cyan) / 0.6);
+    text-shadow: 2px 2px 4px hsl(var(--glow-pink) / 0.8);
+    font-weight: bold;
   }
 
-  .text-neon-purple {
+  .text-90s-lime {
     color: hsl(var(--secondary));
-    text-shadow: 0 0 10px hsl(var(--glow-purple) / 0.6);
+    text-shadow: 2px 2px 4px hsl(var(--glow-lime) / 0.8);
+    font-weight: bold;
   }
 
-  .text-neon-pink {
+  .text-90s-blue {
     color: hsl(var(--accent));
-    text-shadow: 0 0 10px hsl(var(--glow-pink) / 0.6);
+    text-shadow: 2px 2px 4px hsl(var(--glow-blue) / 0.8);
+    font-weight: bold;
   }
 
-  /* Animated border effect */
-  .neon-border {
-    position: relative;
-    border: 1px solid hsl(var(--primary) / 0.5);
+  /* Rainbow title effect */
+  .text-rainbow {
+    background: var(--gradient-rainbow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-shift 3s ease-in-out infinite;
   }
 
-  .neon-border::before {
-    content: '';
-    position: absolute;
-    top: -1px;
-    left: -1px;
-    right: -1px;
-    bottom: -1px;
-    background: var(--gradient-neon);
-    border-radius: inherit;
-    z-index: -1;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  @keyframes rainbow-shift {
+    0%, 100% { filter: hue-rotate(0deg); }
+    50% { filter: hue-rotate(180deg); }
   }
 
-  .neon-border:hover::before {
-    opacity: 0.3;
+  /* 90s beveled border */
+  .bevel-border {
+    border: 3px ridge hsl(var(--border));
+    box-shadow: inset 2px 2px 4px rgba(255,255,255,0.5), 
+                inset -2px -2px 4px rgba(0,0,0,0.2);
   }
 
-  /* Retro button base */
-  .retro-button {
-    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300;
-    @apply border border-primary/50 bg-card/50 text-primary;
-    @apply hover:bg-primary hover:text-primary-foreground;
-    backdrop-filter: blur(10px);
+  /* Geocities button style */
+  .geocities-button {
+    @apply px-6 py-3 rounded font-bold transition-all duration-200;
+    @apply border-2 border-primary bg-gradient-to-b from-primary to-primary;
+    @apply text-primary-foreground shadow-lg;
+    box-shadow: 3px 3px 0px hsl(var(--primary) / 0.5), 
+                inset 1px 1px 0px rgba(255,255,255,0.3);
   }
 
-  /* Profile image glow */
-  .profile-glow {
-    @apply rounded-full;
-    box-shadow: 0 0 40px hsl(var(--glow-cyan) / 0.4);
-    transition: box-shadow 0.3s ease;
+  .geocities-button:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 2px 2px 0px hsl(var(--primary) / 0.5), 
+                inset 1px 1px 0px rgba(255,255,255,0.5);
   }
 
-  .profile-glow:hover {
-    box-shadow: 0 0 60px hsl(var(--glow-cyan) / 0.6);
+  .geocities-button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0px hsl(var(--primary) / 0.5);
+  }
+
+  /* 90s profile image */
+  .profile-90s {
+    @apply rounded-lg;
+    border: 4px ridge hsl(var(--border));
+    box-shadow: 0 0 20px hsl(var(--glow-pink) / 0.6),
+                inset 2px 2px 4px rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
+  }
+
+  .profile-90s:hover {
+    box-shadow: 0 0 30px hsl(var(--glow-pink) / 0.8),
+                0 0 60px hsl(var(--glow-lime) / 0.4),
+                inset 2px 2px 4px rgba(255,255,255,0.5);
+    transform: rotate(-2deg) scale(1.05);
+  }
+
+  /* Star background pattern */
+  .star-bg {
+    background-image: 
+      radial-gradient(2px 2px at 20px 30px, hsl(var(--glow-yellow)), transparent),
+      radial-gradient(2px 2px at 40px 70px, hsl(var(--glow-pink)), transparent),
+      radial-gradient(1px 1px at 90px 40px, hsl(var(--glow-blue)), transparent),
+      radial-gradient(1px 1px at 130px 80px, hsl(var(--glow-lime)), transparent);
+    background-size: 150px 100px;
+    background-repeat: repeat;
+    animation: sparkle 4s linear infinite;
+  }
+
+  @keyframes sparkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
   }
 }
 

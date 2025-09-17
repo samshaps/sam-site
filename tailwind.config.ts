@@ -14,7 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        'inter': ['Inter', 'sans-serif'],
+        'comic': ['Comic Neue', 'sans-serif'],
+        'fredoka': ['Fredoka One', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",

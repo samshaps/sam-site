@@ -7,7 +7,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen relative star-bg">
       <Navigation />
       <main className="container mx-auto px-6 pt-24 pb-16 max-w-4xl">
         {children}
@@ -17,11 +17,11 @@ const Layout = ({ children }: LayoutProps) => {
           href="https://linkedin.com/in/samshap"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center w-12 h-12 bg-card/80 backdrop-blur-lg rounded-full neon-border hover-glow-cyan transition-all duration-300"
+          className="flex items-center justify-center w-12 h-12 bg-card backdrop-blur-lg rounded-full bevel-border hover-glow-blue transition-all duration-300"
           aria-label="LinkedIn Profile"
         >
           <svg
-            className="w-6 h-6 text-primary"
+            className="w-6 h-6 text-90s-blue"
             fill="currentColor"
             viewBox="0 0 24 24"
           >
