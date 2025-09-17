@@ -217,29 +217,11 @@
 
   /* Portrait styling */
   .portrait {
-    position: relative;
-    z-index: 2;
     display: block;
     max-width: min(34vw, 450px);
     max-height: 58vh;
     height: auto;
-    filter: drop-shadow(0 18px 28px rgba(0,0,0,.18));
     border-radius: 20px;
-  }
-
-  /* Fade entire hero visual section into background */
-  .hero-visual::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(ellipse 120% 120% at center, 
-                               transparent 45%, 
-                               hsl(var(--background)) 100%);
-    pointer-events: none;
-    z-index: 1;
   }
 
   /* soft blobs using design system colors */
