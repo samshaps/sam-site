@@ -59,16 +59,11 @@ const Home = () => {
 
         {/* Profile Image - Right side */}
         <div className="flex-shrink-0 relative order-1 lg:order-2">
-          <div className="relative">
-            {/* Decorative dots */}
-            <div className="dots-pattern absolute -top-4 -right-4 w-24 h-24"></div>
-            
-            <img
-              src={samHeadshot}
-              alt="Sam's profile photo"
-              className="max-w-80 lg:max-w-96 object-contain profile-modern"
-            />
-          </div>
+          <img
+            src={samHeadshot}
+            alt="Sam's profile photo"
+            className="max-w-80 lg:max-w-96 object-contain"
+          />
         </div>
       </div>
     </Layout>
