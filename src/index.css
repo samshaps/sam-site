@@ -218,7 +218,7 @@
   /* Portrait styling */
   .portrait {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     display: block;
     max-width: min(34vw, 450px);
     max-height: 58vh;
@@ -228,7 +228,7 @@
   }
 
   /* Fade entire hero visual section into background */
-  .hero-visual::after {
+  .hero-visual::before {
     content: '';
     position: absolute;
     top: 0;
@@ -239,7 +239,7 @@
                                transparent 45%, 
                                hsl(var(--background)) 100%);
     pointer-events: none;
-    z-index: 2;
+    z-index: 1;
   }
 
   /* soft blobs using design system colors */
