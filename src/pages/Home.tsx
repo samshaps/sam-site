@@ -19,16 +19,26 @@ const Home = () => {
             </p>
             
             <p>
-              I currently lead Ecosystem @ Vimeo. Our team empowers developers to infuse the power of video into their products and launch{" "}
+              I currently lead Ecosystem @ Vimeo. Our team empowers developers to infuse video into their products and launch{" "}
               <a 
                 href="https://vimeo.com/integrations" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-primary hover:underline transition-colors duration-200"
               >
-                value-adding integrations
+                integrations
               </a>{" "}
-              with Vimeo. I've also worked on tools to help marketers maximize video ROI and owned our suite of live products.
+              with Vimeo. I've also worked on tools to{" "}
+              <a 
+                href="https://vimeo.com/1024186484" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline transition-colors duration-200"
+              >
+                help marketers maximize video ROI
+              </a>{" "}
+              
+               and owned our suite of live products.
             </p>
             
             <p>
