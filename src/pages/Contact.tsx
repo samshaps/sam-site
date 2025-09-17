@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <Layout>
       <div className="max-w-2xl mx-auto text-center">
-        <h1 className="text-4xl font-fredoka mb-6 text-rainbow">
+        <h1 className="text-4xl font-orbitron mb-6 text-synthwave-3d">
           Get in Touch
         </h1>
         
@@ -13,14 +13,14 @@ const Contact = () => {
           I'd love to hear from you. Whether you want to discuss product ideas, share travel stories, or just say hello.
         </p>
 
-        <div className="bg-card backdrop-blur-lg rounded-lg p-12 bevel-border">
+        <div className="synthwave-border rounded-lg p-12 scanlines">
           <div className="flex flex-col items-center gap-8">
-            <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center glow-pink">
-              <Mail className="w-10 h-10 text-90s-pink" />
+            <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center glow-cyan">
+              <Mail className="w-10 h-10 text-neon-cyan" />
             </div>
             
             <div className="text-center">
-              <h2 className="text-2xl font-bold mb-4 text-90s-lime">
+              <h2 className="text-2xl font-orbitron font-bold mb-4 text-neon-magenta">
                 Let's Connect
               </h2>
               <p className="text-foreground mb-6">
@@ -29,7 +29,7 @@ const Contact = () => {
               
               <a
                 href="mailto:hi@samshap.com"
-                className="inline-flex items-center gap-3 geocities-button hover-glow-blue text-lg px-8 py-4"
+                className="inline-flex items-center gap-3 retro-gaming-button hover-glow-magenta text-lg px-8 py-4"
               >
                 <Mail className="w-5 h-5" />
                 hi@samshap.com
@@ -45,7 +45,7 @@ const Contact = () => {
               href="https://linkedin.com/in/samshap"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-90s-lime hover:text-90s-blue transition-colors duration-300"
+              className="text-neon-cyan hover:text-neon-magenta transition-colors duration-300"
             >
               LinkedIn
             </a>{" "}

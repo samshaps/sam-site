@@ -5,16 +5,16 @@ const Home = () => {
   return (
     <Layout>
       <div className="flex flex-col lg:flex-row items-center justify-center min-h-[60vh] gap-12">
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 relative">
           <img
             src={samProfile}
             alt="Sam's profile photo"
-            className="w-64 h-64 object-cover profile-90s"
+            className="w-64 h-64 object-cover profile-synthwave"
           />
         </div>
         
         <div className="max-w-2xl text-center lg:text-left">
-          <h1 className="text-4xl lg:text-5xl font-fredoka mb-8 text-rainbow">
+          <h1 className="text-4xl lg:text-5xl font-orbitron mb-8 text-synthwave-3d">
             Hi, my name is Sam.
           </h1>
           
@@ -29,7 +29,7 @@ const Home = () => {
                 href="https://vimeo.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-90s-lime hover:text-90s-blue transition-colors duration-300"
+                className="text-neon-cyan hover:text-neon-magenta transition-colors duration-300"
               >
                 Vimeo
               </a>, where I'm helping developers build with Vimeo.
@@ -39,7 +39,7 @@ const Home = () => {
               From Aug-19 to Feb-20, I took six months off of working to fulfill a lifelong dream of extended solo travel. You can read dispatches from my trip{" "}
               <a 
                 href="#" 
-                className="text-90s-lime hover:text-90s-blue transition-colors duration-300"
+                className="text-neon-cyan hover:text-neon-magenta transition-colors duration-300"
               >
                 here
               </a>. I also self-published a coffee table book about it.
@@ -51,7 +51,7 @@ const Home = () => {
                 href="#" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-90s-lime hover:text-90s-blue transition-colors duration-300"
+                className="text-neon-cyan hover:text-neon-magenta transition-colors duration-300"
               >
                 Peek Pro
               </a>, where I helped tour and activity operators grow sales, save time, and delight their customers.
@@ -65,7 +65,7 @@ const Home = () => {
               If you'd like to get in touch, please{" "}
               <a 
                 href="mailto:hi@samshap.com"
-                className="text-90s-pink hover:text-90s-blue transition-colors duration-300"
+                className="text-neon-magenta hover:text-neon-purple transition-colors duration-300"
               >
                 shoot me an email
               </a>.

@@ -60,7 +60,7 @@ const Highlights = () => {
     <Layout>
       <div className="max-w-4xl mx-auto">
         <div className="mb-12">
-          <h1 className="text-4xl font-fredoka mb-4 text-rainbow">
+          <h1 className="text-4xl font-orbitron mb-4 text-synthwave-3d">
             Highlights
           </h1>
           <p className="text-xl text-muted-foreground">
@@ -72,11 +72,11 @@ const Highlights = () => {
           {highlights.map((highlight) => (
             <article
               key={highlight.id}
-              className="bg-card backdrop-blur-lg rounded-lg p-8 bevel-border group hover-glow-lime transition-all duration-300"
+              className="synthwave-border rounded-lg p-8 group hover-glow-purple transition-all duration-300 scanlines"
             >
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center gap-3">
-                  <h2 className="text-xl font-bold text-foreground group-hover:text-90s-lime transition-colors duration-300">
+                  <h2 className="text-xl font-orbitron font-bold text-foreground group-hover:text-neon-purple transition-colors duration-300">
                     {highlight.title}
                   </h2>
                   <span className={`px-3 py-1 text-xs font-medium rounded-full ${
@@ -93,7 +93,7 @@ const Highlights = () => {
                     href={highlight.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-muted-foreground hover:text-90s-pink transition-colors duration-300"
+                    className="flex items-center gap-2 text-muted-foreground hover:text-neon-magenta transition-colors duration-300"
                     aria-label={`External link to ${highlight.title}`}
                   >
                     <ExternalLink className="w-4 h-4" />
@@ -119,7 +119,7 @@ const Highlights = () => {
                     href={highlight.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 geocities-button hover-glow-blue"
+                    className="inline-flex items-center gap-2 retro-gaming-button hover-glow-cyan"
                   >
                     View Project
                     <ExternalLink className="w-4 h-4" />

@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        'comic': ['Comic Neue', 'sans-serif'],
-        'fredoka': ['Fredoka One', 'cursive'],
+        'orbitron': ['Orbitron', 'monospace'],
+        'rajdhani': ['Rajdhani', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

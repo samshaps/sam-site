@@ -7,21 +7,21 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="min-h-screen relative star-bg">
+    <div className="min-h-screen relative synthwave-grid">
       <Navigation />
-      <main className="container mx-auto px-6 pt-24 pb-16 max-w-4xl">
+      <main className="container mx-auto px-6 pt-24 pb-16 max-w-4xl relative z-10">
         {children}
       </main>
-      <footer className="fixed bottom-6 left-6">
+      <footer className="fixed bottom-6 left-6 z-50">
         <a
           href="https://linkedin.com/in/samshap"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center w-12 h-12 bg-card backdrop-blur-lg rounded-full bevel-border hover-glow-blue transition-all duration-300"
+          className="flex items-center justify-center w-12 h-12 synthwave-border rounded-full hover-glow-cyan transition-all duration-300"
           aria-label="LinkedIn Profile"
         >
           <svg
-            className="w-6 h-6 text-90s-blue"
+            className="w-6 h-6 text-neon-cyan"
             fill="currentColor"
             viewBox="0 0 24 24"
           >
@@ -29,6 +29,12 @@ const Layout = ({ children }: LayoutProps) => {
           </svg>
         </a>
       </footer>
+      
+      {/* Geometric decorations */}
+      <div className="triangle-decoration top-32 left-12 gaming-element" />
+      <div className="circle-decoration top-48 right-24 gaming-element" />
+      <div className="triangle-decoration bottom-32 right-16 gaming-element" style={{transform: 'rotate(180deg)'}} />
+      <div className="circle-decoration bottom-48 left-32 gaming-element" />
     </div>
   );
 };
