@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import samHeadshot from "@/assets/sam-headshot.jpg";
+import samHeadshot from "@/assets/sam-new-headshot.jpg";
 
 const Home = () => {
   return (
@@ -92,10 +92,9 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Hero Visual with Blob - Right side */}
+        {/* Hero Visual - Right side */}
         <div className="flex-shrink-0 relative order-1 lg:order-2">
           <div className="hero-visual">
-            <div className="hero-blob" aria-hidden="true"></div>
             <img 
               className="portrait" 
               src={samHeadshot} 

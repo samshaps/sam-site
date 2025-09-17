@@ -224,19 +224,5 @@
     border-radius: 20px;
   }
 
-  /* soft blobs using design system colors */
-  .hero-blob {
-    position: absolute;
-    right: -4%;
-    top: -4%;
-    width: min(36vw, 500px);
-    height: min(36vw, 500px);
-    z-index: 0;
-    filter: blur(36px);
-    border-radius: 999px;
-    background:
-      radial-gradient(40% 40% at 30% 30%, hsl(var(--primary) / 0.35) 0%, transparent 60%),
-      radial-gradient(50% 50% at 70% 60%, hsl(var(--accent) / 0.35) 0%, transparent 62%);
-  }
 }
 
