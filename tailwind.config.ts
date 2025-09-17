@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        'orbitron': ['Orbitron', 'monospace'],
-        'rajdhani': ['Rajdhani', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
+        heading: ['Plus Jakarta Sans', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

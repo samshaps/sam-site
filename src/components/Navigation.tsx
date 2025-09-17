@@ -5,29 +5,30 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { path: "/", label: "Home" },
-    { path: "/about", label: "About Me" },
-    { path: "/highlights", label: "Highlights" },
-    { path: "/contact", label: "Contact" },
+    { path: "/about", label: "ABOUT" },
+    { path: "/highlights", label: "WORKS" }, 
+    { path: "/contact", label: "CONTACT" },
   ];
 
   return (
     <nav className="fixed top-6 right-6 z-50">
-      <div className="flex items-center space-x-1 synthwave-border rounded-lg p-2 scanlines">
-        {navItems.map((item) => (
-          <Link
-            key={item.path}
-            to={item.path}
-            className={cn(
-              "px-4 py-2 rounded font-bold text-sm transition-all duration-300 font-orbitron",
-              location.pathname === item.path
-                ? "retro-gaming-button glow-cyan"
-                : "text-muted-foreground hover:text-neon-cyan hover-glow-cyan"
-            )}
-          >
-            {item.label}
-          </Link>
-        ))}
+      <div className="nav-modern px-6 py-3">
+        <div className="flex items-center space-x-8">
+          {navItems.map((item) => (
+            <Link
+              key={item.path}
+              to={item.path}
+              className={cn(
+                "text-sm font-medium transition-colors duration-200",
+                location.pathname === item.path
+                  ? "text-primary"
+                  : "text-muted-foreground hover:text-foreground"
+              )}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
       </div>
     </nav>
   );

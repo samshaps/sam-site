@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <Layout>
       <div className="max-w-2xl mx-auto text-center">
-        <h1 className="text-4xl font-orbitron mb-6 text-synthwave-3d">
+        <h1 className="heading-lg mb-6">
           Get in Touch
         </h1>
         
@@ -13,23 +13,23 @@ const Contact = () => {
           I'd love to hear from you. Whether you want to discuss product ideas, share travel stories, or just say hello.
         </p>
 
-        <div className="synthwave-border rounded-lg p-12 scanlines">
+        <div className="modern-card p-12">
           <div className="flex flex-col items-center gap-8">
-            <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center glow-cyan">
-              <Mail className="w-10 h-10 text-neon-cyan" />
+            <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center">
+              <Mail className="w-10 h-10 text-primary" />
             </div>
             
             <div className="text-center">
-              <h2 className="text-2xl font-orbitron font-bold mb-4 text-neon-magenta">
+              <h2 className="text-2xl font-heading font-bold mb-4 text-primary">
                 Let's Connect
               </h2>
-              <p className="text-readable mb-6">
+              <p className="text-foreground mb-6">
                 Feel free to reach out via email for any questions, collaborations, or just to chat.
               </p>
               
               <a
                 href="mailto:hi@samshap.com"
-                className="inline-flex items-center gap-3 retro-gaming-button hover-glow-magenta text-lg px-8 py-4"
+                className="inline-flex items-center gap-3 modern-button text-lg px-8 py-4"
               >
                 <Mail className="w-5 h-5" />
                 hi@samshap.com
@@ -39,13 +39,13 @@ const Contact = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-readable-light">
+          <p className="text-muted-foreground">
             You can also find me on{" "}
             <a
               href="https://linkedin.com/in/samshap"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neon-cyan hover:text-neon-magenta transition-colors duration-300"
+              className="text-primary hover:underline transition-colors duration-200"
             >
               LinkedIn
             </a>{" "}
