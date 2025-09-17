@@ -196,24 +196,6 @@
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   }
 
-  /* Hero grid layout for tight text-photo gap */
-  .hero {
-    display: grid;
-    grid-template-columns: minmax(0, 68ch) 440px; /* fix the image column */
-    column-gap: clamp(32px, 4vw, 64px);          /* caps the gap */
-    align-items: start;
-    min-height: 60vh;
-  }
-
-  @media (max-width: 1024px) {
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 3rem;
-    }
-  }
-
   /* Modern navigation */
   .nav-modern {
     @apply bg-white/80 backdrop-blur-sm border border-border rounded-full shadow-sm;
