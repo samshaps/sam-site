@@ -13,7 +13,7 @@ const Home = () => {
             </h1>
           </div>
           
-          <div className="space-y-6 text-lg leading-relaxed text-muted-foreground mb-8">
+          <div className="space-y-6 text-lg leading-relaxed text-muted-foreground mb-8 readable">
             <p>
               I love building useful tools for people.
             </p>

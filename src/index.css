@@ -41,6 +41,10 @@
 
     --radius: 0.75rem;
 
+    /* Typography */
+    --measure: 72ch;            /* max characters per line */
+    --body-lh: 1.65;            /* line height */
+
     /* Modern Gradients */
     --gradient-primary: linear-gradient(135deg, 
       hsl(265 85% 58%), 
@@ -65,6 +69,36 @@
   /* Smooth scrolling */
   html {
     scroll-behavior: smooth;
+  }
+
+  /* Typography - readable line length */
+  .readable {
+    max-width: var(--measure);
+    line-height: var(--body-lh);
+  }
+
+  /* keep nice measure on small screens without crowding */
+  @media (max-width: 640px) {
+    .readable { 
+      padding-right: 2px; 
+      padding-left: 2px; 
+    }
+  }
+
+  /* Micro-underline for links */
+  a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    background-position: 0 100%;
+    transition: background-size .25s ease, color .25s ease;
+  }
+
+  /* hover state */
+  a:hover, a:focus-visible {
+    background-size: 100% 2px;    /* animates in from left */
+    outline: none;
   }
 }
 
