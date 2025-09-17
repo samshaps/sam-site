@@ -66,7 +66,7 @@ const Home = () => {
             <img
               src={samHeadshot}
               alt="Sam's profile photo"
-              className="w-80 h-80 lg:w-96 lg:h-96 object-cover profile-modern"
+              className="max-w-80 lg:max-w-96 object-contain profile-modern"
             />
           </div>
         </div>
