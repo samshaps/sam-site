@@ -15,29 +15,58 @@ const Home = () => {
           
           <div className="space-y-6 text-lg leading-relaxed text-muted-foreground mb-8">
             <p>
-              I love building products that reduce friction in peoples' lives.
+              I love building useful tools for people.
             </p>
             
             <p>
-              I'm currently on the product team at{" "}
+              I currently lead Ecosystem @ Vimeo. Our team empowers developers to infuse the power of video into their products and launch{" "}
               <a 
-                href="https://vimeo.com" 
+                href="https://vimeo.com/integrations" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-primary hover:underline transition-colors duration-200"
               >
-                Vimeo
-              </a>, where I'm helping developers build with Vimeo.
+                value-adding integrations
+              </a>{" "}
+              with Vimeo. I've also worked on tools to help marketers maximize video ROI and owned our suite of live products.
             </p>
             
             <p>
               From Aug-19 to Feb-20, I took six months off of working to fulfill a lifelong dream of extended solo travel. You can read dispatches from my trip{" "}
               <a 
-                href="#" 
+                href="https://medium.com/shappy-travels" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="text-primary hover:underline transition-colors duration-200"
               >
                 here
-              </a>. I also self-published a coffee table book about it.
+              </a>. I also{" "}
+              <a 
+                href="https://www.blurb.com/bookstore/invited/8668003/7623ed4eaa663480c4ac57b87de759a8c1ad5884" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline transition-colors duration-200"
+              >
+                self-published a coffee table book
+              </a>{" "}
+              about it.
+            </p>
+
+            <p>
+              Before that, I helped scale{" "}
+              <a 
+                href="https://www.peekpro.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline transition-colors duration-200"
+              >
+                Peek Pro
+              </a>{" "}
+              and was a management consultant at PwC.
+            </p>
+
+            <p>
+              If you'd like to get in touch, go ahead and book some time!
             </p>
           </div>
 

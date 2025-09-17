@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import Navigation from "./Navigation";
 
 interface LayoutProps {
   children: ReactNode;
@@ -14,8 +13,6 @@ const Layout = ({ children }: LayoutProps) => {
           S.S
         </div>
       </div>
-      
-      <Navigation />
       
       <main className="container mx-auto px-6 pt-24 pb-16 max-w-6xl relative z-10">
         {children}
